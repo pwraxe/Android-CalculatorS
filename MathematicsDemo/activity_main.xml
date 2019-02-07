@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/fnum_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fnumHint"
+        android:padding="20sp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/snum_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/snumHint"
+        android:padding="20sp"
+        android:inputType="number"
+        android:layout_below="@+id/fnum_id"
+        />
+
+    <TextView
+        android:id="@+id/result_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_marginBottom="10sp"
+        android:layout_above="@id/mult"
+        android:background="@color/colorPrimary"
+        />
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="150dp"
+        android:layout_marginLeft="10sp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_marginBottom="10sp"
+        android:layout_toRightOf="@id/add"
+        android:layout_above="@+id/div"
+        android:background="@color/colorPrimary"
+        />
+    <Button
+        android:id="@+id/mult"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        />
+    <Button
+        android:id="@+id/div"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:layout_marginLeft="10sp"
+        android:layout_toRightOf="@+id/mult"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/clrscr_id"
+        android:layout_width="70sp"
+        android:layout_height="120sp"
+        android:text="C"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="5sp"
+        android:layout_alignTop="@+id/add"
+        android:layout_toRightOf="@id/sub"
+
+        />
+
+
+
+</RelativeLayout>
